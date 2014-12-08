@@ -1,0 +1,24 @@
+{
+  "name": "max-by",
+  "version": "0.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "tape": "~3.0"
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/5.1..latest",
+      "opera/11.0..latest",
+      "ipad/6.0..latest",
+      "iphone/6.0..latest",
+      "android-browser/4.2..latest"
+    ]
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  }
+}
