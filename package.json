@@ -9,6 +9,6 @@
   "scripts": {
     "old": "zuul -- test/*.js",
     "yo": "echo $SAUCE_LABS",
-    "test": "[ $SAUCE_LABS == true ] && zuul -- test/*.js || tape test/*.js"
+    "test": "[[ $SAUCE_LABS == true ]] && zuul -- test/*.js || tape test/*.js"
   }
 }
