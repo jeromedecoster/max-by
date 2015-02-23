@@ -8,7 +8,7 @@
   },
   "scripts": {
     "old": "zuul -- test/*.js",
-    "yo": "echo $SAUCE_LABS",
-    "test": "[[ $SAUCE_LABS == true ]] && zuul -- test/*.js || tape test/*.js"
+    "test": "[[ -z \"$SAUCE_LABS\" ]] && echo oui || echo non",
+    "tmp": "[[ $SAUCE_LABS == true ]] && zuul -- test/*.js || tape test/*.js"
   }
 }
