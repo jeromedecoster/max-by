@@ -4,11 +4,14 @@
   "main": "index.js",
   "devDependencies": {
     "tape": "~3.0",
+    "mocha": "~2",
     "zuul": "1"
   },
   "scripts": {
     "old": "zuul --local -- test/*.js",
-    "test": "[ -z \"$SAUCE_LABS\" ] && tape test/*.js || zuul --local -- test/*.js",
+    "yo": "mocha test/mocha.js",
+    "test": "zuul -- test/mocha.js",
+    "test0": "[ -z \"$SAUCE_LABS\" ] && tape test/*.js || zuul -- test/*.js",
     "tmp": "[[ $SAUCE_LABS == true ]] && zuul -- test/*.js || tape test/*.js"
   }
 }
