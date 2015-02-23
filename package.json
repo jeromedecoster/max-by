@@ -8,6 +8,7 @@
   },
   "scripts": {
     "old": "zuul -- test/*.js",
-    "test": "[ \"x$(BROWSER_NAME)\" = 'x' ] && tape test/*.js || zuul -- test/*.js"
+    "yo": "echo $SAUCE_LABS",
+    "test": "[ \"$(SAUCE_LABS)\" ] && zuul -- test/*.js || tape test/*.js"
   }
 }
