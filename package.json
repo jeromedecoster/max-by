@@ -7,6 +7,6 @@
     "zuul": "1"
   },
   "scripts": {
-    "test": "zuul --local -- test/*.js"
+    "test": "zuul -- test/*.js"
   }
 }
