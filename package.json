@@ -7,8 +7,8 @@
     "zuul": "1"
   },
   "scripts": {
-    "old": "zuul -- test/*.js",
-    "test": "[ -z \"$SAUCE_LABS\" ] && tape test/*.js || zuul -- test/*.js",
+    "old": "zuul --local -- test/*.js",
+    "test": "[ -z \"$SAUCE_LABS\" ] && tape test/*.js || zuul --local -- test/*.js",
     "tmp": "[[ $SAUCE_LABS == true ]] && zuul -- test/*.js || tape test/*.js"
   }
 }
