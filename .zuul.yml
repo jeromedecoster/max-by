@@ -3,4 +3,4 @@ ui: tape
 browsers:
   - name: ie
     version: 9
-    platform: Windows XP
+    platform: Windows 7
