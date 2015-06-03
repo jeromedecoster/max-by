@@ -1,5 +1,5 @@
 {
-  "name": "max-by",
+  "name": "find",
   "version": "0.0.0",
   "main": "index.js",
   "repository": "none",
@@ -8,10 +8,10 @@
     "zuul": "^3"
   },
   "scripts": {
+    "test": "zuul -- test",
+    "test:local": "zuul --local 8080  -- test",
     "mocha": "^2",
-    "old": "zuul --local 8080  -- test/index",
     "yo": "mocha test/mocha.js",
-    "test": "zuul -- test/index",
     "test1": "zuul -- test/mocha.js",
     "test0": "[ -z \"$SAUCE_LABS\" ] && tape test/*.js || zuul -- test/*.js",
     "tmp": "[[ $SAUCE_LABS == true ]] && zuul -- test/*.js || tape test/*.js"
