@@ -2,15 +2,16 @@
   "name": "max-by",
   "version": "0.0.0",
   "main": "index.js",
+  "repository": "none",
   "devDependencies": {
-    "tape": "~3.0",
-    "mocha": "~2",
-    "zuul": "1"
+    "tape": "^4",
+    "mocha": "^2",
+    "zuul": "^3"
   },
   "scripts": {
-    "old": "zuul --local -- test/*.js",
+    "old": "zuul --local 8080  -- test/index",
     "yo": "mocha test/mocha.js",
-    "test": "zuul -- test/index.js",
+    "test": "zuul -- test/index",
     "test1": "zuul -- test/mocha.js",
     "test0": "[ -z \"$SAUCE_LABS\" ] && tape test/*.js || zuul -- test/*.js",
     "tmp": "[[ $SAUCE_LABS == true ]] && zuul -- test/*.js || tape test/*.js"
