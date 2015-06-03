@@ -5,10 +5,10 @@
   "repository": "none",
   "devDependencies": {
     "tape": "^4",
-    "mocha": "^2",
     "zuul": "^3"
   },
   "scripts": {
+    "mocha": "^2",
     "old": "zuul --local 8080  -- test/index",
     "yo": "mocha test/mocha.js",
     "test": "zuul -- test/index",
