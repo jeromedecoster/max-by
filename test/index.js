@@ -1,7 +1,7 @@
 var maxBy = require('../');
 var test = require('tape');
 
-test('simple comparisons', function (t) {
+test('simple comparisons', {timeout: 10000}, function (t) {
 	t.plan(1)
 
   console.log(navigator.userAgent + ' // ' + navigator.platform)
@@ -12,9 +12,9 @@ test('simple comparisons', function (t) {
   // force fail on chrome
   // } else if (navigator.userAgent.indexOf('Chrome') >-1) {
     t.equal(n, 4)
-    setTimeout(function () {
-            t.fail('timeout')
-        }, 10000)
+    // setTimeout(function () {
+    //         t.fail('timeout')
+    //     }, 10000)
   // } else {
 	  // t.equal(n, 4)
     // t.end()
