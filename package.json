@@ -8,7 +8,7 @@
     "zuul": "^3"
   },
   "scripts": {
-    "test": "echo yes",
+    "test": "tape test.js",
     "testok": "zuul -- test.js",
     "test:local": "zuul --local 8080  -- test.js",
     "mocha": "^2",

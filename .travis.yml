@@ -10,12 +10,5 @@ env:
     - secure: rKxGaPkWoXDJg0NRWueqnmecEzoKopfuUSAnkh5oe93wjEeSUYsz/a0+ocly8Ba109ZdmxAGXbEh26BPAGcjoiOPqfGa5ihditYnqxKkCJtQBbkI4Ld811Ez6sJNwLaHtCLF2UPXaBKQR67wHs9AFPFm5SzVlO+Rdqgrc6EoKA==
     - secure: bW3DVc9NZfLtQTq+5jQw7BQDXYYHT6hQ5XMvrFdKz6676ELakyNzqGDoDnYaRvZpkR+8+eFIyE8bS/wNaWx4o9BGCycREQfS5cLsle3m36aOV4SUtwxhYq3eW34jbk32Qvw6a16XC+EB9gWlgaIX5zJ+krVu387BGpNC7BJeHz4=
 script:
-  - "[[ $YO == true ]]  || echo 'script 1'"
-  - "[[ $YO == true ]]  && echo 'script 2'"
-  - "[[ $YO == false ]] || echo 'script 4'"
-  - "[[ $YO == false ]] && echo 'script 5'"
-  - "[[ $ZUUL == true ]]  || echo 'script 6'"
-  - "[[ $ZUUL == true ]]  && echo 'script 7'"
-  - "[[ $ZUUL == false ]] || echo 'script 8'"
-  - "[[ $ZUUL == false ]] && echo 'script 9'"
+  - "[[ $ZUUL == false ]] || zuul -- test.js"
 
