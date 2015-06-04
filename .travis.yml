@@ -12,5 +12,25 @@ env:
 script:
   - "[ $SAUCE_LABS == true ] || echo 'script 1'"
   - "[ $SAUCE_LABS == false ] || echo 'script 2'"
+  - "[ -n $SAUCE_LABS ] || echo 'script 3'"
+  - "[ -z $SAUCE_LABS ] || echo 'script 4'"
+  - "[ -n $SAUCE_LABS ] && echo 'script 5'"
+  - "[ -z $SAUCE_LABS ] && echo 'script 6'"
+  - "[ $TRAVIS == true ] || echo 'script 7'"
+  - "[ $TRAVIS == false ] || echo 'script 8'"
+  - "[ -n $TRAVIS ] || echo 'script 9'"
+  - "[ -z $TRAVIS ] || echo 'script 10'"
+  - "[ -n $TRAVIS ] && echo 'script 11'"
+  - "[ -z $TRAVIS ] && echo 'script 12'"
+  - "[ $TRAVOS == true ] || echo 'script 13'"
+  - "[ $TRAVOS == false ] || echo 'script 14'"
+  - "[ -n $TRAVOS ] || echo 'script 15'"
+  - "[ -z $TRAVOS ] || echo 'script 16'"
+  - "[ -n $TRAVOS ] && echo 'script 17'"
+  - "[ -z $TRAVOS ] && echo 'script 18'"
+  - 'echo $SAUCE_LABS'
+  - 'echo "$SAUCE_LABS"'
+  - 'echo $TRAVIS'
+  - 'echo "$TRAVIS"'
   - 'echo $TRAVOS'
   - 'echo "$TRAVOS"'
