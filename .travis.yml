@@ -6,31 +6,16 @@ git:
   depth: 1
 env:
   global:
-    - SAUCE_LABS=true
+    - OK=true
+    - ZU=1
     - secure: rKxGaPkWoXDJg0NRWueqnmecEzoKopfuUSAnkh5oe93wjEeSUYsz/a0+ocly8Ba109ZdmxAGXbEh26BPAGcjoiOPqfGa5ihditYnqxKkCJtQBbkI4Ld811Ez6sJNwLaHtCLF2UPXaBKQR67wHs9AFPFm5SzVlO+Rdqgrc6EoKA==
     - secure: bW3DVc9NZfLtQTq+5jQw7BQDXYYHT6hQ5XMvrFdKz6676ELakyNzqGDoDnYaRvZpkR+8+eFIyE8bS/wNaWx4o9BGCycREQfS5cLsle3m36aOV4SUtwxhYq3eW34jbk32Qvw6a16XC+EB9gWlgaIX5zJ+krVu387BGpNC7BJeHz4=
 script:
-  - "[ $SAUCE_LABS == true ] || echo 'script 1'"
-  - "[ $SAUCE_LABS == false ] || echo 'script 2'"
-  - "[ -n $SAUCE_LABS ] || echo 'script 3'"
-  - "[ -z $SAUCE_LABS ] || echo 'script 4'"
-  - "[ -n $SAUCE_LABS ] && echo 'script 5'"
-  - "[ -z $SAUCE_LABS ] && echo 'script 6'"
-  - "[ $TRAVIS == true ] || echo 'script 7'"
-  - "[ $TRAVIS == false ] || echo 'script 8'"
-  - "[ -n $TRAVIS ] || echo 'script 9'"
-  - "[ -z $TRAVIS ] || echo 'script 10'"
-  - "[ -n $TRAVIS ] && echo 'script 11'"
-  - "[ -z $TRAVIS ] && echo 'script 12'"
-  - "[ $TRAVOS == true ] || echo 'script 13'"
-  - "[ $TRAVOS == false ] || echo 'script 14'"
-  - "[ -n $TRAVOS ] || echo 'script 15'"
-  - "[ -z $TRAVOS ] || echo 'script 16'"
-  - "[ -n $TRAVOS ] && echo 'script 17'"
-  - "[ -z $TRAVOS ] && echo 'script 18'"
-  - 'echo $SAUCE_LABS'
-  - 'echo "$SAUCE_LABS"'
-  - 'echo $TRAVIS'
-  - 'echo "$TRAVIS"'
-  - 'echo $TRAVOS'
-  - 'echo "$TRAVOS"'
+  - "[ $OK == true ]  || echo 'script 1'"
+  - "[ $OK == true ]  && echo 'script 2'"
+  - "[ $OK == false ] || echo 'script 4'"
+  - "[ $OK == false ] && echo 'script 5'"
+  - "[ $ZU -eq 1 ] || echo 'script 6'"
+  - "[ $ZU -eq 1 ] && echo 'script 7'"
+  - "[ $ZU -ne 1 ] || echo 'script 8'"
+  - "[ $ZU -ne 1 ] && echo 'script 9'"
