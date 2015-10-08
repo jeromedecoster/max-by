@@ -9,8 +9,8 @@ browsers:
   - name: safari
     version: 5..latest
   - name: iphone
-    version: 4.3..latest
+    version: '4.3..latest'
   - name: ipad
-    version: 4.3..latest
+    version: '4.3..latest'
   - name: android
-    version: 4.0..latest
+    version: '4.0..latest'
