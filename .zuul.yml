@@ -1,4 +1,72 @@
 ui: tape
 browsers:
-  - name: microsoftedge
-    version: latest
+  - name: ie
+    version: 9..latest
+  - name: chrome
+    version: 35..latest
+  - name: firefox
+    version: 30..latest
+  - name: safari
+    version: 5..latest
+  - name: iphone
+    version: 5.0
+  - name: iphone
+    version: 5.1
+  - name: iphone
+    version: 6.0
+  - name: iphone
+    version: 6.1
+  - name: iphone
+    version: 7.0
+  - name: iphone
+    version: 7.1
+  - name: iphone
+    version: 8.0
+  - name: iphone
+    version: 8.1
+  - name: iphone
+    version: 8.2
+  - name: iphone
+    version: 8.3
+  - name: iphone
+    version: 8.4
+  - name: iphone
+    version: 9.0
+  - name: ipad
+    version: 5.0
+  - name: ipad
+    version: 5.1
+  - name: ipad
+    version: 6.0
+  - name: ipad
+    version: 6.1
+  - name: ipad
+    version: 7.0
+  - name: ipad
+    version: 7.1
+  - name: ipad
+    version: 8.0
+  - name: ipad
+    version: 8.1
+  - name: ipad
+    version: 8.2
+  - name: ipad
+    version: 8.3
+  - name: ipad
+    version: 8.4
+  - name: ipad
+    version: 9.0
+  - name: android
+    version: 4.0
+  - name: android
+    version: 4.1
+  - name: android
+    version: 4.2
+  - name: android
+    version: 4.3
+  - name: android
+    version: 4.4
+  - name: android
+    version: 5.0
+  - name: android
+    version: 5.1
