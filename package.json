@@ -10,7 +10,7 @@
   "scripts": {
     "test": "tape test.js",
     "zuul": "zuul -- test.js",
-    "test:local": "zuul --local 8080  -- test.js",
+    "zuul:local": "zuul --local 8080  -- test.js",
     "mocha": "^2",
     "yo": "mocha test/mocha.js",
     "test1": "zuul -- test/mocha.js",
