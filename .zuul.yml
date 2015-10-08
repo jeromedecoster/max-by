@@ -1,4 +1,10 @@
 ui: tape
 browsers:
   - name: iphone
-    version: 7..8
+    version: 8.0
+  - name: iphone
+    version: 8.1
+  - name: iphone
+    version: 8.2
+  - name: iphone
+    version: 8.3
