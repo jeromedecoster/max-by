@@ -1,4 +1,4 @@
 ui: tape
 browsers:
-  - name: ie
-    version: 9..latest
+  - name: iphone
+    version: 4..latest
